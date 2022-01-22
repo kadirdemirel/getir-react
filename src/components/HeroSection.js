@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import ReactFlagsSelect from "react-flags-select";
 import { FaFacebook } from "react-icons/fa";
 export default function HeroSection() {
-  const [selected, setSelected] = useState("US");
+  const [selected, setSelected] = useState("TR");
   const phones = {
     US: "+1",
     DE: "+50",
@@ -53,7 +53,7 @@ export default function HeroSection() {
             <div className="flex gap-x-2">
               <ReactFlagsSelect
                 countries={Object.keys(phones)}
-                customLabels={phones}
+                customLabels={phones} 
                 onSelect={(code) => setSelected(code)}
                 selected={selected}
                 className="flag-select"

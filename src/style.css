@@ -424,6 +424,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 html,
   body {
   font-family: "Open Sans", sans-serif;
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -549,6 +551,10 @@ html,
   margin-right: auto;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -593,6 +599,10 @@ html,
   width: 400px;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -605,6 +615,18 @@ html,
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-10 {
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -633,6 +655,10 @@ html,
   row-gap: 0.75rem;
 }
 
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -645,9 +671,18 @@ html,
   border-width: 2px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-brand-color {
@@ -682,6 +717,15 @@ html,
   padding: 1.5rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -709,6 +753,10 @@ html,
   font-weight: 600;
 }
 
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -727,6 +775,11 @@ html,
 .text-blue-700 {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-opacity-80 {
@@ -748,6 +801,14 @@ html,
   transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, -webkit-text-decoration-color, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -832,11 +893,6 @@ html,
   --tw-gradient-to: transparent;
 }
 
-.hover\:border-primary-brand-color:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(93 62 188 / var(--tw-border-opacity));
-}
-
 .hover\:bg-primary-brand-color:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(93 62 188 / var(--tw-bg-opacity));
@@ -845,6 +901,11 @@ html,
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-purple-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 245 255 / var(--tw-bg-opacity));
 }
 
 .hover\:text-brand-yellow:hover {
@@ -869,6 +930,11 @@ html,
 .group:hover .group-hover\:border-primary-brand-color {
   --tw-border-opacity: 1;
   border-color: rgb(93 62 188 / var(--tw-border-opacity));
+}
+
+.group:hover .group-hover\:text-brand-color {
+  --tw-text-opacity: 1;
+  color: rgb(76 51 152 / var(--tw-text-opacity));
 }
 
 .peer:valid ~ .peer-valid\:h-7 {
