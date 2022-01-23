@@ -7,7 +7,6 @@ import Header from "components/Header";
 import HeroSection from "components/HeroSection";
 import MobileApp from "components/MobileApp";
 
-
 function App() {
   return (
     <div className="App">
@@ -15,9 +14,12 @@ function App() {
       <HeroSection />
       <Categories />
       <Campaigns />
-      <Favorites />
-      <MobileApp />
-      <Cards />
+      <div className="container mx-auto grid gap-y-6">
+        <Favorites />
+        <MobileApp />
+        <Cards />
+      </div>
+
       <Footer />
     </div>
   );

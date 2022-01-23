@@ -9,7 +9,7 @@ export default function Favorites() {
     setProducts(Products);
   }, []);
   return (
-    <div className="container mx-auto">
+    <div>
       <Title>Favoriler</Title>
       <div className="grid grid-cols-8 gap-0.1 bg-white rounded-lg overflow-hidden">
         {products.length &&
