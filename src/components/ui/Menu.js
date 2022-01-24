@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import { Collapse } from "react-collapse";
 import { useWindowWidth } from "@react-hook/window-size";
