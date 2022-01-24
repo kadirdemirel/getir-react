@@ -5,7 +5,7 @@ import { RiUserFill, RiUserAddFill } from "react-icons/ri";
 export default function Header() {
   return (
     <div className="bg-brand-color">
-      <div className="container mx-auto h-11 flex items-center justify-between">
+      <div className="container mx-auto h-16 md:h-11 flex items-center justify-center md:justify-between">
         <a href="##">
           <img
             src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTMiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCA1MyAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI2LjAzODQgOS4yNDAxOUMyNi4wMzg0IDYuNDk5OTkgMjMuODAxMiA0LjcxMjg5IDIwLjUxODIgNC43MTI4OUMxNy40MDc0IDQuNzEyODkgMTQuMTUwOSA2Ljk1MDA3IDE0LjE1MDkgMTEuOTI3NUMxNC4xNTA5IDE1LjcyNjcgMTYuNDU0MiAxOC41MzMxIDIwLjQyNTYgMTguNTMzMUMyMi42NjI3IDE4LjUzMzEgMjUuMTI1IDE3
@@ -31,7 +31,7 @@ export default function Header() {
             class="style__Image-sc-__sc-1h9bp23-0 iceviX"
           ></img>
         </a>
-        <nav className="flex gap-x-8 text-sm font-semibold">
+        <nav className="hidden md:flex gap-x-8 text-sm font-semibold">
           <a
             href="##"
             className="flex items-center gap-x-2 text-white transition-all text-opacity-80 hover:text-opacity-100"

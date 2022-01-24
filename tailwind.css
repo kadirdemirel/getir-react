@@ -20,3 +20,6 @@
 .flag-select {
   @apply !pb-0;
 }
+.ReactColloapce--collapce {
+  @apply transition-all;
+}

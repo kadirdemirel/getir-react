@@ -8,7 +8,7 @@ export default function Cards() {
     setCards(cardsData);
   }, []);
   return (
-    <div className="grid grid-cols-3 gap-x-4">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 p-4 md:px-0 gap-4">
       {cards.length &&
         cards.map((card, index) => (
           <div
